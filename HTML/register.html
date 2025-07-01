@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>My Register Form</title>
+        <link rel="icon" href="image/Logo.ico" type="image/x-icon">
+    </head>
+    <body>
+        <h1>Register Form</h1> 
+        <from action="registerAction.html" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" pattern ="[A-Za-z]{4-8}"required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern ="[A-Za-z]" required><br><br>
+             <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+             <label for="phone">Phonenumber:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+             <label for="gender">Gender:</label>
+            <input type="radio" name="Gender" value="Female">Female
+             <input type="radio" name="Gender" value="Male">Male
+             <label for="db">Date of Birth:</label>
+             <input type="date" id="dob" name="dob" required><br>
+             <label for="Branch">Branch:</label>
+             <select id="Branch" name="Branch" required>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="ME">ME</option>
+                <option value="CE">CE</option>
+                </select><br><br>
+             <label for="address">Address:</label>
+             <textarea id="address" name="address" rows="4" cols="50" required>
+
+             </textarea><br><br>
+             <input type="submit" value="Register">
+
+        </from>
+    </body>
+</html>
